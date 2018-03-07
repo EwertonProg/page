@@ -3,8 +3,8 @@
 
   <head>
     <title>Curriculo</title>
-	<link	rel="stylesheet" href="style.css">
-	<meta charset = "utf-8">
+	   <link	rel="stylesheet" href="style.css">
+	    <meta charset = "utf-8">
   </head>
 
   <body>
@@ -30,19 +30,5 @@
 	  </div>
     </div>
   </body>
-
-  <script>
-		document.getElementById("nas").innerHTML += (" nascido em 25/06/1998(" + calcula_idade(new Date(1998,05,25)) + " Anos).");
-
-		function calcula_idade(nascimento){
-			var hoje = new Date();
-			var res = hoje.getFullYear() - nascimento.getFullYear();
-			if(hoje.getMonth()>nascimento.getMonth()||hoje.getMonth()==nascimento.getMonth()&&hoje.getDate()>=nascimento.getDate()){
-				return res;
-			}else{
-				res--;
-				return res;
-			}
-		}
-	</script>
+<script type="text/javascript" src="script.js"></script>
 </html>
