@@ -1,1 +1,48 @@
-  q
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <title>Curriculo</title>
+	<link	rel="stylesheet" href="style.css">
+	<meta charset = "utf-8">
+  </head>
+
+  <body>
+    <header>
+    	<a href = "index.html">Completo</a> <a href = "curriculo_resumido.html">Resumido</a>
+    	<hr>
+    </header>
+    <div class = "corpo">
+      <h1>Ewerton Luis de Jesus Santana</h1>
+	  <img src="img/foto.jpg">
+      <p id="nas">Solteiro,</p> <p>Residente à travessa São Jorge, número 44, São Cristovão, Salvador/BA</p> <p>Contatos: (71)98763-2209</p> <p>E-mail: <a href="mailto:ewerton.lsantana@gmail.com">ewerton.lsantana@gmail.com</a></p>
+      <h2>Objetivo</h2>
+      <p>Atuar na área de T.I</p>
+      <h2>Formação acadêmica</h2>
+      <p>Graduando em Engenharia de software, 3º semestre, UCSAL</p> <p>Termino previsto: junho de 2021</p>
+      <h2>Experiências profissionais</h2>
+      <p>Empresa: Instituto JCPM</p> <p>Cargo: auxiliar administrativo</p> <p>Período: de janeiro de 2016 a janeiro de 2018</p> <p>Principais atividades: atualização de planilhas e atendimento interno e externo</p>
+      <h2>Qualificações profissionais</h2>
+	  <div id="qualificacao">
+		  <p>Instituição formadora: SENAI</p> <p>Curso: Comunicação de dados</p> <p>Carga horária: 880 Horas</p>
+		  <br/><p>Instituição formadora: Instituto JCPM</p> <p>Curso: Multidisciplinar (Português, Matemática, Informática, Inglês e Teatro)</p> <p>Carga horária: 232 Horas</p>
+		  <br/><p>Instituição formadora: CIEE/F.R.M</p> <p>Curso: Auxiliar administrativo</p> <p>Carga horária: 552 Horas</p>
+	  </div>
+    </div>
+  </body>
+
+  <script>
+		document.getElementById("nas").innerHTML += (" nascido em 25/06/1998(" + calcula_idade(new Date(1998,2,7)) + " Anos).");
+
+		function calcula_idade(nascimento){
+			var hoje = new Date();
+			var res = hoje.getFullYear() - nascimento.getFullYear();
+			if(hoje.getMonth()>nascimento.getMonth()||hoje.getMonth()==nascimento.getMonth()&&hoje.getDate()>=nascimento.getDate()){
+				return res;
+			}else{
+				res--;
+				return res;
+			}
+		}
+	</script>
+</html>

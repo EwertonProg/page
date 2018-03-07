@@ -1,0 +1,38 @@
+﻿	h1 {
+        text-align: center;
+		font-family: monospace;
+      }
+	  
+	  #qualificacao{
+		line-height:0.8;
+	  }
+	  
+	  p{
+		line-height:1;
+	  }
+	  
+	  body{
+		background: RGB(34,219,164);
+	  }
+
+      .corpo {
+        margin: auto 25%;
+		padding: 1px 17px 5px 20px;
+		border-style: DOTTED;
+		border-color: blue;
+		line-height:2;
+		font-size: 15px;
+		font-family: monospace;
+		background: white;
+      }
+	  
+	  .corpo img{
+		width: 100px;
+		height: 120px;
+		float: right;
+	  }
+	  
+	  header{
+		  line-height: 1px;
+	  }
+	  	  
